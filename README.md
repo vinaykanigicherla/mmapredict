@@ -9,25 +9,35 @@ The raw data is obtained through scraping historical UFC fight data from ufcstat
 ## Usage 
 1) Clone the repo:
 
-    $ git clone https://github.com/vinaykanigicherla/mmapredict.git
+```
+$ git clone https://github.com/vinaykanigicherla/mmapredict.git
+```
 
 2) Run scrapy web crawler from "mma_scraper" directory, save data, and move the file to "data" directory:
-    
-    $ cd mma_scraper/
-    $ scrapy crawl fight_scraper -O raw_data.json
-    $ mv raw_data.json data/
+
+```    
+$ cd mma_scraper/
+$ scrapy crawl fight_scraper -O raw_data.json
+$ mv raw_data.json ../data/
+```
 
 3) Run data_processing script (steps visualized in Jupyter Notebooks in "data_processing" directory)
-    
-    $ python data_processing/data_processing.py
+
+```    
+$ python data_processing/data_processing.py
+```
 
 4) Train and save baseline models. Tune hyperparameters of baseline models and save. 
-    
-    $ python training/lvl1_models.py --data_path "data/train.pkl" --seed 0
+
+```    
+$ python training/lvl1_models.py --data_path "data/train.pkl" --seed 0
+```
 
 5) Train and save stacking model. 
     
-    $ python training.stacking.py --data_path "data/train.pkl" --seed 0
+```
+$ python training.stacking.py --data_path "data/train.pkl" --seed 0
+```
 
 ## TODO
 * Implement feature selection
