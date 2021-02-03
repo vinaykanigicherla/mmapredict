@@ -36,7 +36,7 @@ $ python training/lvl1_models.py --data_path "data/train.pkl" --seed 0
 5) Train and save stacking model. 
     
 ```
-$ python training.stacking.py --data_path "data/train.pkl" --seed 0
+$ python training/stacking.py --data_path "data/train.pkl" --seed 0
 ```
 
 ## TODO
