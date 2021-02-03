@@ -19,6 +19,7 @@ $ git clone https://github.com/vinaykanigicherla/mmapredict.git
 $ cd mma_scraper/
 $ scrapy crawl fight_scraper -O raw_data.json
 $ mv raw_data.json ../data/
+$ cd ..
 ```
 
 3) Run data_processing script (steps visualized in Jupyter Notebooks in "data_processing" directory)
